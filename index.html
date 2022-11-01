@@ -300,8 +300,13 @@
         <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
         <script>
             const swiper = new Swiper('.swiper', {
-                spaceBetween: 0,
+                spaceBetween: 10,
+                loop: true,
                 slidesPerView: 2.5,
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
                 pagination: {
                   el: '.swiper-pagination',
                   type: 'bullets',  
